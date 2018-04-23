@@ -1,5 +1,5 @@
 # My Spectrum  
-### Xamarin – Practical Coding Test
+### Xamarin – Practical Coding Test (Xamarin Native - iOS)
 
 ##### Programming Problem -
 Provide a production ready solution that accepts a new user name, validates a single string input as the password, and stores it locally. The solution should be written in C#/Xamarin with native UI (Android or iOS, your choice, not Xamarin Forms)
@@ -31,3 +31,13 @@ The following are the string validations:
 ![Image of Signup Screen](https://github.com/NirmalSubedi17/mycharter/blob/master/Screenshots/Screen%20Shot%202018-04-23%20at%205.19.44%20PM.png)
 
 ![Image of Home Screen](https://github.com/NirmalSubedi17/mycharter/blob/master/Screenshots/Screen%20Shot%202018-04-23%20at%205.21.45%20PM.png)
+
+
+
+
+
+
+
+
+
+#### Uploading this project so that some other developers can find it useful. 
