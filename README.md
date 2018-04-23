@@ -1,7 +1,7 @@
-#My Spectrum  
-###Xamarin – Practical Coding Test
+# My Spectrum  
+### Xamarin – Practical Coding Test
 
-#####Programming Problem -
+##### Programming Problem -
 Provide a production ready solution that accepts a new user name, validates a single string input as the password, and stores it locally. The solution should be written in C#/Xamarin with native UI (Android or iOS, your choice, not Xamarin Forms)
 UI requirements:
 1. The UI should have at least a page that is a list of users and their information.
@@ -13,7 +13,7 @@ The following are the string validations:
 2. String must be between 5 and 12 characters in length.
 3. String must not contain any sequence of characters immediately followed by the same sequence
 
-#Covered:
+# Covered:
 * Signup
 * Login
 * Forgot Password
@@ -24,7 +24,7 @@ The following are the string validations:
 * Password Validation
 
 
-#Output:
+# Output:
 
 ![Image of Login Screen](https://github.com/NirmalSubedi17/mycharter/blob/master/Screenshots/Screen%20Shot%202018-04-23%20at%205.19.25%20PM.png)
 
