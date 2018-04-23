@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4545" useSafeAreas="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="4544">
+            <objects>
+                <navigationController id="4545" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4547">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.58823529411764708" blue="0.95294117647058818" alpha="1"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue id="4642" destination="4556" kind="relationship" relationship="rootViewController"/>
+                        <segue id="4774" destination="4647" kind="show" identifier="UserSignup"/>
+                        <segue id="4906" destination="4785" kind="show" identifier="UsersList"/>
+                        <segue id="23508" destination="23431" kind="show" identifier="AddUser"/>
+                    </connections>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4551">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </toolbar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4548" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="95"/>
+        </scene>
+        <scene sceneID="4555">
+            <objects>
+                <viewController id="4556" sceneMemberID="viewController" customClass="LoginView" storyboardIdentifier="LoginView">
+                    <view key="view" contentMode="center" id="4557">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Spectrum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5389" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="227" width="414" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.5490196078431373" blue="0.98039215686274506" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5391" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="personicon.png">
+                                <rect key="frame" x="0.0" y="91" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6931" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" placeholder="Username" highlighted="YES" selected="YES">
+                                <rect key="frame" x="36" y="318" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email" keyboardType="emailAddress"/>
+                                <viewLayoutGuide key="safeArea" id="6932"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6933" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" placeholder="Password">
+                                <rect key="frame" x="36" y="364" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" autocorrectionType="no" textContentType="password" spellCheckingType="no" secureTextEntry="YES"/>
+                                <viewLayoutGuide key="safeArea" id="7175"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7398" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="114" y="422" width="178" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.58823529411764708" blue="0.996078431372549" alpha="1"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <viewLayoutGuide key="safeArea" id="8081"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8726" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Spectrumlogo.png" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="0.0" y="679" width="414" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <viewLayoutGuide key="safeArea" id="8741"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dont have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8970" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="60" y="559" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="left" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="11919" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="222" y="555" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Create here">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.58823529411764708" blue="0.95294117647058818" alpha="1"/>
+                                </state>
+                                <viewLayoutGuide key="safeArea" id="20880"/>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="20619" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="0.0" y="486" width="414" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.58823529411764708" blue="0.95294117647058818" alpha="1"/>
+                                </state>
+                                <viewLayoutGuide key="safeArea" id="20858"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6046"/>
+                    </view>
+                    <navigationItem title="Login" id="4641" key="navigationItem"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="5149" id="5148"/>
+                        <outlet property="txtPassword" destination="6933" id="name-outlet-6933"/>
+                        <outlet property="txtUserName" destination="6931" id="name-outlet-6931"/>
+                        <outlet property="cmdLogin" destination="7398" id="name-outlet-7398"/>
+                        <outlet property="cmdGotoSignup" destination="11919" id="name-outlet-11919"/>
+                        <outlet property="cmdForgotPassword" destination="20619" id="name-outlet-20619"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4558" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="5149">
+                    <connections>
+                        <outlet property="delegate" destination="4556" id="5150"/>
+                        <outlet property="searchBar" destination="5146" id="5151"/>
+                        <outlet property="searchContentsController" destination="4556" id="5152"/>
+                        <outlet property="searchResultsDataSource" destination="4556" id="5153"/>
+                        <outlet property="searchResultsDelegate" destination="4556" id="5154"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="416" y="-14"/>
+        </scene>
+        <scene sceneID="4646">
+            <objects>
+                <viewController id="4647" sceneMemberID="viewController" customClass="SignupView" storyboardIdentifier="SignupView" title="Signup">
+                    <view key="view" contentMode="scaleToFill" id="4648">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6047"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9692" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="0.0" y="194" width="414" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.5490196078431373" blue="0.98039215686274506" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="10099"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="9693" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Username" highlighted="YES" selected="YES" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="40" y="307" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email" keyboardType="emailAddress"/>
+                                <viewLayoutGuide key="safeArea" id="10101"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="9694" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="40" y="353" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" autocorrectionType="no" textContentType="password" spellCheckingType="no" secureTextEntry="YES"/>
+                                <viewLayoutGuide key="safeArea" id="10102"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9695" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="113" y="450" width="219" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.58823529411764708" blue="0.996078431372549" alpha="1"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <viewLayoutGuide key="safeArea" id="10104"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9696" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="48" y="546" width="178" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <viewLayoutGuide key="safeArea" id="10106"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9698" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="Spectrumlogo.png" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="0.0" y="669" width="414" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <viewLayoutGuide key="safeArea" id="10108"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Charter Communications, Time Warner Cable, and Bright House Networks are now one company." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9780" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="3" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="40" y="615" width="335" height="46"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <viewLayoutGuide key="safeArea" id="10097"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To create an account, Please enter the Email ID and Password. " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9818" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="0.0" y="245" width="414" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <viewLayoutGuide key="safeArea" id="10100"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="9837" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Confirm Password" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="40" y="399" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" autocorrectionType="no" textContentType="password" spellCheckingType="no" secureTextEntry="YES"/>
+                                <viewLayoutGuide key="safeArea" id="10103"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="16376" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" image="personicon.png" layoutMarginsFollowReadableWidth="YES" preservesSuperviewLayoutMargins="YES">
+                                <rect key="frame" x="0.0" y="94" width="414" height="112"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <viewLayoutGuide key="safeArea" id="16377"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="left" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="23184" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="234" y="542" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Sign in here">
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.58823529411764708" blue="0.95294117647058818" alpha="1"/>
+                                </state>
+                                <viewLayoutGuide key="safeArea" id="23421"/>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="cmdSignUp" destination="9695" id="name-outlet-9695"/>
+                        <outlet property="txtUserName" destination="9693" id="name-outlet-9693"/>
+                        <outlet property="txtPassword" destination="9694" id="name-outlet-9694"/>
+                        <outlet property="txtConfirmPassword" destination="9837" id="name-outlet-9837"/>
+                        <outlet property="cmdGotoSignin" destination="23184" id="name-outlet-23184"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4649" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="781"/>
+        </scene>
+        <scene sceneID="4784">
+            <objects>
+                <tableViewController id="4785" sceneMemberID="viewController" customClass="UserListView" storyboardIdentifier="UserListView" title="Manage Users">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4786">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4789" reuseIdentifier="cellUser">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4789" id="4790">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4785" id="4787"/>
+                            <outlet property="delegate" destination="4785" id="4788"/>
+                        </connections>
+                        <viewLayoutGuide key="safeArea" id="9446"/>
+                    </tableView>
+                    <connections>
+                        <outlet property="tblUsers" destination="4786" id="name-outlet-4786"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4791" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="-18"/>
+        </scene>
+        <scene sceneID="23430">
+            <objects>
+                <viewController id="23431" sceneMemberID="viewController" customClass="AddUserView" storyboardIdentifier="AddUserView">
+                    <view key="view" contentMode="scaleToFill" id="23432">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="23429"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23556" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="0.0" y="89" width="414" height="59"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.5490196078431373" blue="0.98039215686274506" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="23809"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To create an account, Please enter the Email ID and Password. " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23557" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="0.0" y="140" width="414" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <viewLayoutGuide key="safeArea" id="23810"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="23558" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Username" highlighted="YES" selected="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="40" y="202" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="email" keyboardType="emailAddress"/>
+                                <viewLayoutGuide key="safeArea" id="23811"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="23559" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Password" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="40" y="248" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" autocorrectionType="no" textContentType="password" spellCheckingType="no" secureTextEntry="YES"/>
+                                <viewLayoutGuide key="safeArea" id="23812"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="23560" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="Confirm Password" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="40" y="294" width="335" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" autocorrectionType="no" textContentType="password" spellCheckingType="no" secureTextEntry="YES"/>
+                                <viewLayoutGuide key="safeArea" id="23813"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="23561" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES">
+                                <rect key="frame" x="113" y="345" width="219" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.12549019607843137" green="0.58823529411764708" blue="0.996078431372549" alpha="1"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <viewLayoutGuide key="safeArea" id="23814"/>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="txtUserName" destination="23558" id="name-outlet-23558"/>
+                        <outlet property="txtPassword" destination="23559" id="name-outlet-23559"/>
+                        <outlet property="txtConfirmPassword" destination="23560" id="name-outlet-23560"/>
+                        <outlet property="cmdSubmit" destination="23561" id="name-outlet-23561"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23433" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="779"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="myspectrumicon.png" width="300" height="300"/>
+        <image name="Spectrumlogo.png" width="757" height="300"/>
+        <image name="personicon.png" width="512" height="512"/>
+    </resources>
+</document>

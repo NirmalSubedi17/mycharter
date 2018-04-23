@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--/-:cnd -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <PackageTargetFallback>portable-net45+win8+wpa81</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MvvmCross" Version="5.2.1" />
+    <PackageReference Include="MvvmCross.Binding" Version="5.2.1" />
+    <PackageReference Include="MvvmCross.Core" Version="5.2.1" />
+    <PackageReference Include="MvvmCross.Platform" Version="5.2.1" />
+    <PackageReference Include="artm.MvxPlugins.Logger" Version="2.11.5" />
+    <PackageReference Include="Acr.UserDialogs" Version="6.2.5" />
+    <PackageReference Include="Xamarin.Auth" Version="1.6.0.2" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Contracts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ViewModels\FirstViewModel.cs" />
+  </ItemGroup>
+</Project>
