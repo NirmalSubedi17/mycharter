@@ -39,5 +39,3 @@ The following are the string validations:
 
 
 
-
-#### Uploading this project so that some other developers can find it useful. 
